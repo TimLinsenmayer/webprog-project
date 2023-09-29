@@ -7,8 +7,8 @@ import Footer from '@/components/footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'webprog-project',
-  description: 'MAGIC!',
+  title: 'UpStore',
+  description: 'Diese Website wurde im Rahmen der Vorlesung "Webprogrammierung" der DHBW Karlsruhe erstellt.',
 }
 
 export default function RootLayout({
