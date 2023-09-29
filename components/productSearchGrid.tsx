@@ -1,9 +1,5 @@
 "use client";
-import useSWR from 'swr'
-import { ScrollArea,ScrollBar } from "./ui/scroll-area";
 import ProductCard from './productCard';
-import ProductCardLoad from './productCardLoading';
-const fetcher = (url: RequestInfo | URL) => fetch(url).then(r => r.json())
 
 export interface Product {
     id: number
@@ -28,7 +24,7 @@ interface ProductProps {
 
 export default function ProductSearchSlider({data}:ProductProps){
     return (
-            <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2  xl:grid-cols-4 gap-y-5">
+            <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 xl:grid-cols-4 gap-y-5">
             {data.products.map((product: Product) => (
                 <ProductCard product={product}/>
             ))}

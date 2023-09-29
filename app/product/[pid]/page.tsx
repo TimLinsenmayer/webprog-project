@@ -8,19 +8,7 @@ import { ShoppingBasket } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import getCategoryInfo from "@/components/categories"
 import ProductSlider from "@/components/productSlider";
-interface Product {
-    id: number
-    title: string
-    description: string
-    price: number
-    discountPercentage: number
-    rating: number
-    stock: number
-    brand: string
-    category: string
-    thumbnail: string
-    images: string[]
-  }
+
 const fetcher = (url: RequestInfo | URL) => fetch(url).then(r => r.json())
 
 export default function Page({ params }: { params: { pid: string } }){

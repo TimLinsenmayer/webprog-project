@@ -1,6 +1,6 @@
 
 import { Skeleton } from "@/components/ui/skeleton"
-import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
+import { Card, CardFooter, CardHeader} from "./ui/card";
 
 export default function ProductCardLoad(){
     return (

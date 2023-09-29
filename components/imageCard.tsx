@@ -2,8 +2,13 @@ import { AspectRatio } from "./ui/aspect-ratio";
 import Image from "next/image"
 import { Card } from "./ui/card";
 import React from "react";
+import { Product } from "./productSlider";
 
-export default function ImageCard({data}){
+interface ProductProps {
+    data: Product
+}
+
+export default function ImageCard({data}:ProductProps){
     const [imageId, setValue] = React.useState(data.thumbnail)
     return (
         <div>

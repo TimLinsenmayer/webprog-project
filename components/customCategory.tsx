@@ -13,10 +13,9 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
-import {Award,SmilePlus,Cookie,Bike,Glasses,Gem,ShoppingBag,Lightbulb,Watch,Footprints,Shirt,Armchair,Flower2,Check, ChevronsUpDown, LucideIcon} from 'lucide-react'
+import {Award,SmilePlus,Cookie,Bike,Glasses,Gem,ShoppingBag,Lightbulb,Watch,Footprints,Shirt,Armchair,Flower2, ChevronsUpDown, LucideIcon} from 'lucide-react'
 import React from 'react'
 import ProductSlider from './productSlider'
-import { Separator } from './ui/separator'
 type category = {
     value: string
     label: string
