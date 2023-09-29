@@ -7,7 +7,7 @@ import Image from "next/image"
 export default function ProductCard({product}:Product){
     const redirectURL = "/product/"+ product.id
     return (
-        <a href={redirectURL}>
+        <a href={redirectURL} className="w-[300px]">
             <Card className="w-[300px]">
                 <div style={{ position: 'relative', overflow: 'hidden', height: '200px'}} className="rounded-tl-lg rounded-tr-lg">
                     <Image

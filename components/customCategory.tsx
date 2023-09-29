@@ -16,6 +16,7 @@ import {
 import {Award,SmilePlus,Cookie,Bike,Glasses,Gem,ShoppingBag,Lightbulb,Watch,Footprints,Shirt,Armchair,Flower2,Check, ChevronsUpDown, LucideIcon} from 'lucide-react'
 import React from 'react'
 import ProductSlider from './productSlider'
+import { Separator } from './ui/separator'
 type category = {
     value: string
     label: string
@@ -133,10 +134,10 @@ export default function CustomCategory(){
                         className="w-[230px] justify-between"
                     >
                         {selected ? (
-                            <>
-                                <selected.icon className="mr-2 h-4 w-4 shrink-0" />
+                            <div className='flex'>
+                                <selected.icon className="mr-2 h-4 w-4" />
                                 {selected.label}
-                            </>
+                            </div>
                         ) : (
                             <>Kategorie auswählen</>
                         )}
@@ -171,7 +172,7 @@ export default function CustomCategory(){
                     </Command>
                 </PopoverContent>
             </Popover>
-        </div><div>
+        </div><div className='my-4'>
                 {selected ? (
                     <ProductSlider category={selected.value} />
                 ) : (<div className='h-[200px]'></div>)}

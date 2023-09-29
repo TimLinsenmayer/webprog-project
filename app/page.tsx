@@ -1,6 +1,5 @@
 "use client"
 import { AccordionDemo } from '@/components/QuestionsAccordion'
-import CategorySelector from '@/components/categorySelector'
 import CustomCategory from '@/components/customCategory'
 import ProductSlider from '@/components/productSlider'
 import { Button } from '@/components/ui/button'
@@ -27,7 +26,7 @@ export default function Home() {
           </div>
         </div>
         <Separator className="my-4" />
-        <ProductSlider category="smartphones"></ProductSlider>
+        <ProductSlider category="smartphones"/>
         <div className="flex items-center justify-between pt-4">
           <div className="space-y-1">
             <h2 className="text-2xl font-semibold tracking-tight">
@@ -39,10 +38,10 @@ export default function Home() {
           </div>
         </div>
         <Separator className="my-4" />
-        <ProductSlider category="laptops"></ProductSlider>
+        <ProductSlider category="laptops"/>
         <CustomCategory/>
-        <div className='container relative h-[500px] bg-slate-400 flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0 rounded-md'>
-          <div className='pl-10'>
+        <div className='container relative pb-5 pt-5 lg:h-[500px] bg-slate-400 flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0 rounded-md'>
+          <div className='pl-1 pt-4 lg:pl-10 lg:pt-0'>
           <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
             Wir sind
           </h3>

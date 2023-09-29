@@ -24,7 +24,7 @@ export default function ImageCard({data}){
                     alt={data.title + " Bild #"+index}
                     width={70}
                     height={70}
-                    className="h-auto w-auto object-cover transition-all hover:scale-105 portrait"
+                    className="h-auto w-auto object-cover transition-all hover:scale-105 portrait cursor-pointer"
                     onClick={()=>setValue(image)}
                     />
                     </div>

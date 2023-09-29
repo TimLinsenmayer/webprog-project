@@ -32,7 +32,7 @@ import {
           Wir akzeptieren eine Vielzahl von Zahlungsmethoden einschließlich Kreditkarten (Visa, MasterCard, American Express), PayPal, und Banküberweisungen.
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="item-5">
+        <AccordionItem value="item-5" className="border-none">
           <AccordionTrigger>Ist es sicher, online auf Ihrer Website einzukaufen?</AccordionTrigger>
           <AccordionContent>
           Die Sicherheit Ihrer Daten ist uns sehr wichtig. Wir verwenden modernste Verschlüsselungstechnologien, um sicherzustellen, dass Ihre Transaktionen und persönlichen Informationen sicher sind.

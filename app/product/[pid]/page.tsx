@@ -1,15 +1,12 @@
 "use client"
 
 import useSWR from "swr"
-import Image from "next/image"
-import { Rating } from 'flowbite-react';
 import ImageCard from "@/components/imageCard"
 import StarRating from "@/components/star-rating";
 import { Button } from "@/components/ui/button";
 import { ShoppingBasket } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import getCategoryInfo from "@/components/categories"
-import ProductSliderAlt from "@/components/productSliderAlt";
 import ProductSlider from "@/components/productSlider";
 interface Product {
     id: number
@@ -39,12 +36,12 @@ export default function Page({ params }: { params: { pid: string } }){
     return (
         <div className="flex-1">
             <div className="container">
-                <div className='container relative flex-col md:grid lg:max-w-none lg:grid-cols-2 lg:px-0 pt-4 gap-10'>
-                    <div className='pl-10'>
+                <div className='container relative flex-col lg:grid lg:max-w-none lg:grid-cols-2 lg:px-0 pt-4 gap-10 pl-10 pr-10'>
+                    <div>
                         <ImageCard data={data}/>
                     </div>
-                    <div className='pr-10'>
-                        <p className="text-sm text-muted-foreground">{data.brand}</p>
+                    <div>
+                        <p className="text-sm text-muted-foreground pt-4 lg:pt-0">{data.brand}</p>
                         <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
                             {data.title}
                         </h2>
