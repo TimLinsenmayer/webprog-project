@@ -19,8 +19,12 @@ export interface Product {
     images: string[]
   }
 
+  interface CategoryProps {
+    category: string;
+}
 
-export default function ProductSlider({category}){
+
+export default function ProductSlider({category}:CategoryProps){
     const URL = 'https://dummyjson.com/products/category/'+category+'?limit=0'
     const { data, error } = useSWR(URL, fetcher)
     if (error) return <div>Fehler beim Laden!</div>

@@ -4,7 +4,12 @@ import { Button } from "./ui/button"
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
 import Image from "next/image"
 
-export default function ProductCard({product}:Product){
+interface ProductProps {
+    product: Product;
+}
+
+
+export default function ProductCard({product}:ProductProps){
     const redirectURL = "/product/"+ product.id
     return (
         <a href={redirectURL} className="w-[300px]">

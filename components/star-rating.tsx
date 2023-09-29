@@ -1,6 +1,10 @@
 import { Rating } from "flowbite-react"
 
-export default function StarRating({rating}){
+interface StarProps {
+    rating: number
+}
+
+export default function StarRating({rating}:StarProps){
     const ratingRounded = Math.round(rating)
     return (
         <Rating className="pt-2">

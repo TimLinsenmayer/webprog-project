@@ -5,7 +5,7 @@ import { Input } from "./ui/input";
 import { useState } from "react";
 
 export default function Navbar(){
-    const handleKeyDown = (event) => {
+    const handleKeyDown = (event:React.KeyboardEvent<HTMLInputElement>) => {
         if (event.key === 'Enter') {
           window.location.replace("/search/"+ value)
         }

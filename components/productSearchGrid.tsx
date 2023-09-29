@@ -19,8 +19,14 @@ export interface Product {
     images: string[]
   }
 
+interface ProductProps {
+    data: {
+        products: Product[];
+    };
+}
 
-export default function ProductSearchSlider({data}){
+
+export default function ProductSearchSlider({data}:ProductProps){
     return (
             <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2  xl:grid-cols-4 gap-y-5">
             {data.products.map((product: Product) => (
