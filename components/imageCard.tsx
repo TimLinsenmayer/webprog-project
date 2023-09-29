@@ -29,7 +29,7 @@ export default function ImageCard({data}:ProductProps){
                     alt={data.title + " Bild #"+index}
                     width={70}
                     height={70}
-                    className="h-auto w-auto object-cover transition-all hover:scale-105 portrait cursor-pointer"
+                    className="h-auto w-auto object-cover transition-all hover:scale-105 portrait cursor-pointer rounded-md"
                     onClick={()=>setValue(image)}
                     />
                     </div>
