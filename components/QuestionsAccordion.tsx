@@ -11,13 +11,13 @@ import {
         <AccordionItem value="item-1">
           <AccordionTrigger>Wie kann ich meine Bestellung verfolgen?</AccordionTrigger>
           <AccordionContent>
-          Sie können den Status Ihrer Bestellung überprüfen, indem Sie sich in Ihr Konto einloggen und zum Bereich "Meine Bestellungen" navigieren. Dort finden Sie alle relevanten Informationen sowie eine Tracking-Nummer, mit der Sie Ihre Sendung verfolgen können.
+          Sie können den Status Ihrer Bestellung überprüfen, indem Sie sich in Ihr Konto einloggen und zum Bereich &quot;Meine Bestellungen&quot; navigieren. Dort finden Sie alle relevanten Informationen sowie eine Tracking-Nummer, mit der Sie Ihre Sendung verfolgen können.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
           <AccordionTrigger>Wie kann ich einen Artikel zurückgeben oder umtauschen?</AccordionTrigger>
           <AccordionContent>
-          Um einen Artikel zurückzugeben oder umzutauschen, besuchen Sie bitte den Abschnitt "Retouren" auf unserer Website. Dort finden Sie alle notwendigen Informationen und das Formular für die Rücksendung.
+          Um einen Artikel zurückzugeben oder umzutauschen, besuchen Sie bitte den Abschnitt &quot;Retouren&quot; auf unserer Website. Dort finden Sie alle notwendigen Informationen und das Formular für die Rücksendung.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">

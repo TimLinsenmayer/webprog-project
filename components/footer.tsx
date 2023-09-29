@@ -28,7 +28,7 @@ export default function Footer(){
                                 <DialogHeader>
                                 <DialogTitle>Über diese Seite</DialogTitle>
                                 <DialogDescription>
-                                    Diese Webanwendung dient als Portfolioleistung in der Vorlesung "Entwicklung verteilter Systeme - Webprogrammierung" der DHBW Karlsruhe für den Kurs WWI22B2.
+                                    Diese Webanwendung dient als Portfolioleistung in der Vorlesung &quot;Entwicklung verteilter Systeme - Webprogrammierung&quot; der DHBW Karlsruhe für den Kurs WWI22B2.
                                     Trotz des Designs als Shop besteht nur die Möglichkeit, Produkte anzusehen und nach diesen zu suchen. Die Preise dienen nur der Inhaltsdarstellung, es können keine Kaufverträge über diese Website abgeschlossen werden.
                                 </DialogDescription>
                                 <DialogTitle className="pt-3">Quellen</DialogTitle>
@@ -125,7 +125,7 @@ export default function Footer(){
                 </ul>
             </div>
             <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://www.linkedin.com/in/tim-joscha-linsenmayer-903a29216/" className="hover:underline">Tim Linsenmayer</a>. Diese Website wurde im Rahmen der Vorlesung "Webprogrammierung" der DHBW Karlsruhe erstellt.</span>
+            <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://www.linkedin.com/in/tim-joscha-linsenmayer-903a29216/" className="hover:underline">Tim Linsenmayer</a>. Diese Website wurde im Rahmen der Vorlesung &quot;Webprogrammierung&quot; der DHBW Karlsruhe erstellt.</span>
         </div>
     </footer>
 

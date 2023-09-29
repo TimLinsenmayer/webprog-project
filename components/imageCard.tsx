@@ -23,7 +23,7 @@ export default function ImageCard({data}:ProductProps){
             <Card className="mt-4 place-content-center">
                 <div className="flex space-x-4 px-4 pb-4 pt-4 place-content-center">
                     {data.images.map((image: string, index:number) => (
-                    <div className="overflow-hidden rounded-md">
+                    <div key={index} className="overflow-hidden rounded-md">
                     <Image
                     src={image}
                     alt={data.title + " Bild #"+index}

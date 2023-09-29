@@ -25,8 +25,8 @@ interface ProductProps {
 export default function ProductSearchSlider({data}:ProductProps){
     return (
             <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 xl:grid-cols-4 gap-y-5">
-            {data.products.map((product: Product) => (
-                <ProductCard product={product}/>
+            {data.products.map((product: Product, i:number) => (
+                <ProductCard key={i} product={product}/>
             ))}
         </div>
         

@@ -43,8 +43,8 @@ export default function ProductSlider({category}:CategoryProps){
         <div className="relative">
         <ScrollArea>
             <div className="flex space-x-4 pb-4">
-            {data.products.map((product: Product) => (
-                <ProductCard product={product}/>
+            {data.products.map((product: Product, i:number) => (
+                <ProductCard key={i} product={product}/>
             ))}
             </div>
             <ScrollBar orientation="horizontal" />
