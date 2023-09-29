@@ -11,11 +11,11 @@
 <details open="open">
 <summary>Inhalt</summary>
 
-- [Über dieses Projekt](#todo)
-  - [Gebaut mit...](#todo)
-- [Installation & Start](#todo)
-  - [Alternativ (gehostete Version)](#todo)
-- [Hinweise](#todo)
+- [Über dieses Projekt](#über-dieses-projekt)
+  - [Gebaut mit...](#gebaut-mit)
+- [Installation & Start](#installation--start)
+  - [Alternativ (gehostete Version)](#alternativ-gehostete-version)
+- [Hinweise](#alternativ-gehostete-version)
 
 
 </details>
