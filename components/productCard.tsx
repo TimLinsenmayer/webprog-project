@@ -56,7 +56,7 @@ export default function ProductCard({product}:ProductProps){
                             <AlertDialogHeader>
                             <AlertDialogTitle>Kein Kaufabschluss möglich!</AlertDialogTitle>
                             <AlertDialogDescription>
-                            Diese Webanwendung dient als Portfolioleistung in der Vorlesung "Entwicklung verteilter Systeme - Webprogrammierung" der DHBW Karlsruhe für den Kurs WWI22B2. Trotz des Designs als Shop besteht nur die Möglichkeit, Produkte anzusehen und nach diesen zu suchen. Die Preise dienen nur der Inhaltsdarstellung, es können keine Kaufverträge über diese Website abgeschlossen werden.
+                            Diese Webanwendung dient als Portfolioleistung in der Vorlesung &quot;Entwicklung verteilter Systeme - Webprogrammierung&quot; der DHBW Karlsruhe für den Kurs WWI22B2. Trotz des Designs als Shop besteht nur die Möglichkeit, Produkte anzusehen und nach diesen zu suchen. Die Preise dienen nur der Inhaltsdarstellung, es können keine Kaufverträge über diese Website abgeschlossen werden.
                             </AlertDialogDescription>
                             </AlertDialogHeader>
                             <AlertDialogFooter>
