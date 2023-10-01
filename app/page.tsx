@@ -12,7 +12,6 @@ export default function Home() {
         <div className='rounded-lg border bg-card text-card-foreground shadow-sm mt-3 px-5 flex flex-col items-start gap-2 px-4 pt-8 md:pt-12 relative pb-4 md:pb-8 lg:pb-12' id='greeter'>
           <h1 className='text-2xl font-bold leading-tight tracking-tighter md:text-4xl lg:leading-[1.1]'>Herbst-Sale</h1>
           <p className='max-w-[750px] text-lg text-muted-foreground sm:text-xl'>Jetzt unsere Herbst-Schnäppchen entdecken!</p>
-          <Button>Zu den Angeboten</Button>
         </div>
         
         <div className="flex items-center justify-between pt-4">

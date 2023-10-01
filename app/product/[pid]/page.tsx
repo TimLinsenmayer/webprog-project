@@ -24,7 +24,7 @@ export default function Page({ params }: { params: { pid: string } }){
     return (
         <div className="flex-1">
             <div className="container">
-                <div className='container relative flex-col lg:grid lg:max-w-none lg:grid-cols-2 lg:px-0 pt-4 gap-10 pl-10 pr-10'>
+                <div className='relative flex-col lg:grid lg:max-w-none lg:grid-cols-2 lg:px-0 pt-4 gap-10 md:pr-10 md:pl-10'>
                     <div>
                         <ImageCard data={data}/>
                     </div>
@@ -34,7 +34,7 @@ export default function Page({ params }: { params: { pid: string } }){
                             {data.title}
                         </h2>
                         <StarRating rating={data.rating}/>
-                        <div className="flex flex-row items-center">
+                        <div className="grid sm:flex items-center">
                         <div className="flex flex-row gap-4">
                             <div className="text-2xl font-bold pt-4">{data.price}€</div>
                             <div className="text-md font-bold pt-6 line-through text-red-700">{(data.price*(1+(data.discountPercentage/100))).toFixed(2).replace(".",",")}€</div>
