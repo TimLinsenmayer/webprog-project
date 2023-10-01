@@ -17,7 +17,8 @@ export default function ImageCard({data}:ProductProps){
                                 src={imageId}
                                 alt={data.title}
                                 fill={true}
-                                className="rounded-md object-cover"
+                                style={{objectFit: "contain"}}
+                                className="rounded-md"
                                 />
             </AspectRatio>
             <Card className="mt-4 place-content-center">
