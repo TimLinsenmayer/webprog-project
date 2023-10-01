@@ -5,6 +5,16 @@ import ImageCard from "@/components/imageCard"
 import StarRating from "@/components/star-rating";
 import { Button } from "@/components/ui/button";
 import { ShoppingBasket } from "lucide-react";
+import {
+    AlertDialog,
+    AlertDialogAction,
+    AlertDialogContent,
+    AlertDialogDescription,
+    AlertDialogFooter,
+    AlertDialogHeader,
+    AlertDialogTitle,
+    AlertDialogTrigger,
+  } from "@/components/ui/alert-dialog"
 import { Separator } from "@/components/ui/separator";
 import getCategoryInfo from "@/components/categories"
 import ProductSlider from "@/components/productSlider";
@@ -34,15 +44,30 @@ export default function Page({ params }: { params: { pid: string } }){
                             {data.title}
                         </h2>
                         <StarRating rating={data.rating}/>
-                        <div className="grid sm:flex items-center">
+                        <div className="sm:flex flex-row items-center">
                         <div className="flex flex-row gap-4">
                             <div className="text-2xl font-bold pt-4">{data.price}€</div>
                             <div className="text-md font-bold pt-6 line-through text-red-700">{(data.price*(1+(data.discountPercentage/100))).toFixed(2).replace(".",",")}€</div>
                         </div>
-                        <Button className="ml-auto">
-                            <ShoppingBasket className="mr-2 h-4 w-4" />
-                            Kaufen
-                        </Button>
+                        <div className="grow">                       
+                        </div>
+                        <AlertDialog>
+                        <AlertDialogTrigger><Button>
+                        <ShoppingBasket className="mr-2 h-4 w-4" />
+                        Kaufen
+                    </Button></AlertDialogTrigger>
+                        <AlertDialogContent>
+                            <AlertDialogHeader>
+                            <AlertDialogTitle>Kein Kaufabschluss möglich!</AlertDialogTitle>
+                            <AlertDialogDescription>
+                            Diese Webanwendung dient als Portfolioleistung in der Vorlesung "Entwicklung verteilter Systeme - Webprogrammierung" der DHBW Karlsruhe für den Kurs WWI22B2. Trotz des Designs als Shop besteht nur die Möglichkeit, Produkte anzusehen und nach diesen zu suchen. Die Preise dienen nur der Inhaltsdarstellung, es können keine Kaufverträge über diese Website abgeschlossen werden.
+                            </AlertDialogDescription>
+                            </AlertDialogHeader>
+                            <AlertDialogFooter>
+                            <AlertDialogAction>Verstanden</AlertDialogAction>
+                            </AlertDialogFooter>
+                        </AlertDialogContent>
+                    </AlertDialog>
                         </div>
                         <p className="leading-7 [&:not(:first-child)]:mt-6">
                         {data.description}

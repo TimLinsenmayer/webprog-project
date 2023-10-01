@@ -2,6 +2,16 @@ import { ShoppingBasket } from "lucide-react";
 import { Product } from "./productSlider";
 import { Button } from "./ui/button"
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
+import {
+    AlertDialog,
+    AlertDialogAction,
+    AlertDialogContent,
+    AlertDialogDescription,
+    AlertDialogFooter,
+    AlertDialogHeader,
+    AlertDialogTitle,
+    AlertDialogTrigger,
+  } from "@/components/ui/alert-dialog"
 import Image from "next/image"
 
 interface ProductProps {
@@ -37,10 +47,24 @@ export default function ProductCard({product}:ProductProps){
                 </CardHeader>
                 <CardFooter>
                     <h3 className="text-lg font-medium align-middle flex-grow">{product.price}€</h3>
-                    <Button>
+                    <AlertDialog>
+                        <AlertDialogTrigger><Button>
                         <ShoppingBasket className="mr-2 h-4 w-4" />
                         Kaufen
-                    </Button>
+                    </Button></AlertDialogTrigger>
+                        <AlertDialogContent>
+                            <AlertDialogHeader>
+                            <AlertDialogTitle>Kein Kaufabschluss möglich!</AlertDialogTitle>
+                            <AlertDialogDescription>
+                            Diese Webanwendung dient als Portfolioleistung in der Vorlesung "Entwicklung verteilter Systeme - Webprogrammierung" der DHBW Karlsruhe für den Kurs WWI22B2. Trotz des Designs als Shop besteht nur die Möglichkeit, Produkte anzusehen und nach diesen zu suchen. Die Preise dienen nur der Inhaltsdarstellung, es können keine Kaufverträge über diese Website abgeschlossen werden.
+                            </AlertDialogDescription>
+                            </AlertDialogHeader>
+                            <AlertDialogFooter>
+                            <AlertDialogAction>Verstanden</AlertDialogAction>
+                            </AlertDialogFooter>
+                        </AlertDialogContent>
+                    </AlertDialog>
+                    
                 </CardFooter>
         </Card>
         </a>
