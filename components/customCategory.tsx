@@ -121,7 +121,7 @@ export default function CustomCategory(){
                     Weitere Kategorien
                 </h2>
                 <p className="text-sm text-muted-foreground">
-                    Top picks for you. Updated daily.
+                    Wählen Sie weitere Kategorien rechts aus der Liste aus.
                 </p>
 
             </div>
@@ -146,7 +146,7 @@ export default function CustomCategory(){
                 <PopoverContent className="w-[230px] p-0">
                     <Command>
                         <CommandInput placeholder="Kategorien durchsuchen..." />
-                        <CommandEmpty>No framework found.</CommandEmpty>
+                        <CommandEmpty>Keine Kategorie gefunden.</CommandEmpty>
                         <CommandGroup>
                             {otherCategories.map((category) => (
                                 <CommandItem

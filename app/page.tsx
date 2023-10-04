@@ -20,7 +20,7 @@ export default function Home() {
               Smartphones
             </h2>
             <p className="text-sm text-muted-foreground">
-              Top picks for you. Updated daily.
+              Die aktuellsten Modelle - nur bei uns!
             </p>
           </div>
         </div>
@@ -32,7 +32,7 @@ export default function Home() {
               Laptops
             </h2>
             <p className="text-sm text-muted-foreground">
-              Top picks for you. Updated daily.
+              Leistungsstarke Endgeräte zu fairen Preisen.
             </p>
           </div>
         </div>
